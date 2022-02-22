@@ -1,0 +1,16 @@
+.nav-button {
+  font-weight: 500;
+  font-size: large;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+.header-height {
+  height: 20% !important;
+
+  @media (max-width: 992px) {
+    height: 12% !important;
+  }
+}

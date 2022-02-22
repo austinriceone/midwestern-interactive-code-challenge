@@ -1,0 +1,6 @@
+<app-heading-one></app-heading-one>
+<div class="text-white">Remove the duplicates in 2 Javascript objects and output the list of distinct names in an unordered list when <a (click)="removeDupes()">this
+  link</a> is clicked. If the operation has been completed already notify the user that this has already been done.
+</div>
+<h5 class="mt-4 fw-bold" *ngIf="resultingList.length !== 0">List of Distinct Names</h5>
+<span *ngFor="let name of resultingList; let i=index;" class="fs-6">{{name}}{{i !== resultingList.length - 1  ? ',' : ''}} </span>

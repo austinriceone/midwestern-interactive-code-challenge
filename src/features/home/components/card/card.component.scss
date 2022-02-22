@@ -1,0 +1,19 @@
+.content-card {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+
+  img {
+    margin: auto;
+    display: block;
+  }
+
+  .image-container {
+    height: 106px
+  }
+
+  .content-container {
+    min-height: 96px;
+  }
+}

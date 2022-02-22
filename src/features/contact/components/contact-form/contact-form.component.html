@@ -1,0 +1,22 @@
+<form *ngIf="!thankYou" [formGroup]="contactForm" class="w-100 p-4 ps-lg-5 me-lg-0 ms-lg-4 position-relative">
+  <div class="white-backdrop"></div>
+  <app-heading-two [text]="'Heading Two'"></app-heading-two>
+  <div class="row px-3">
+    <input class="contact-form-input col-12 col-lg-6" formControlName="firstName" placeholder="First Name">
+    <input class="contact-form-input col-12 col-lg-6" formControlName="lastName" placeholder="Last Name">
+    <input class="contact-form-input col-12 col-lg-6" formControlName="title" placeholder="Title">
+    <div class="col-12 col-lg-6 m-0 p-0 position-relative">
+      <input class="contact-form-input w-100 {{emailRequiredCheck ? 'invalid-input' : ''}}" formControlName="email"
+             placeholder="Email">
+      <div class="required-message" *ngIf="emailRequiredCheck">Required</div>
+    </div>
+    <textarea class="col-12 col-lg-6 contact-form-input" formControlName="message"
+              placeholder="Message"></textarea>
+    <div class="text-center">
+      <button class="btn btn-primary" (click)="sendContactInfo()">Submit</button>
+    </div>
+  </div>
+</form>
+
+<div *ngIf="thankYou" class="text-dark text-center"><span class="light-border p-3">Thank you for reaching out! We will get back with you shortly.</span>
+</div>

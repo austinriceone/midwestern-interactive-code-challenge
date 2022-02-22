@@ -1,0 +1,29 @@
+@import "../node_modules/bootstrap/scss/functions";
+
+$primary: #DEBF79;
+$body-bg: #222222;
+$body-color: #858585;
+$danger: #800000;
+$font-family-sans-serif: 'Poppins';
+$headings-color: #ffffff;
+$btn-border-radius: 0;
+$btn-font-size: 10pt;
+$btn-padding-x: 28px;
+$btn-padding-y: 12px;
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+.btn-primary {
+  color: white!important;
+}
+
+a {
+  color: $primary !important;
+}
+
+a:hover {
+  color: lighten($primary, 10) !important;
+  cursor: pointer;
+}

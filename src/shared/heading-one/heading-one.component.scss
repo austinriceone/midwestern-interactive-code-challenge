@@ -1,0 +1,15 @@
+@import '../../custom';
+
+.heavy-underline {
+  text-decoration: underline !important;
+  text-decoration-color: $primary !important;
+  text-underline-offset: 17px;
+  text-decoration-thickness: 4px !important;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  padding-bottom: 2rem;
+  text-wrap: none;
+}

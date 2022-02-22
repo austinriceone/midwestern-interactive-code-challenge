@@ -1,0 +1,18 @@
+.white-background {
+  @media (min-width: 992px) {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: #FFFFFF;
+    z-index: -1;
+  }
+}
+
+.container-fluid {
+  @media (min-width: 992px) {
+  padding-right: 6rem !important;
+  padding-left: 6rem !important;
+}
+}

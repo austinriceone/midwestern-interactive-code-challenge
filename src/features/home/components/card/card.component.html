@@ -1,0 +1,12 @@
+<div class="bg-white px-5 pt-4 pb-5 content-card w-100 mb-2 mb-lg-0">
+  <div class="align-content-center">
+  <div class="image-container d-flex align-content-center">
+    <img src='{{imageMap[card.title]}}'>
+  </div>
+    <app-heading-two [text]="card.title"></app-heading-two>
+    <div class="mb-1 content-container">{{card.content}}</div>
+    <div class="d-flex justify-content-center mt-3">
+      <button class="btn btn-primary">Learn More</button>
+    </div>
+  </div>
+</div>
