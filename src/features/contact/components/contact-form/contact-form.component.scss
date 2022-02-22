@@ -41,6 +41,8 @@ textarea {
   width: 100vw;
   height: 100%;
   z-index: -1;
+  margin-left: -0.75rem;
+  min-height: 20vh;
 
   @media (min-width: 992px) {
     visibility: hidden;
